@@ -1,6 +1,8 @@
 # Web-programming
 웹프로그래밍 응용 강의 실습
 
+xml, DOM프로그램에 대해 배우고, 뉴스목록 서비스를 만들어 보자.
+
 ### 실습 내용 확인
 
 [웹응용강의 홈페이지](http://mm.sookmyung.ac.kr/~sblim/) -> Coursework(old) -> 2021 -> 웹프로그래밍응용 (2학년)
