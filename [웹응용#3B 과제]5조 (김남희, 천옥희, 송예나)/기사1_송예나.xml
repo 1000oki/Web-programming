@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article
+    xmlns="http://it.sookmyung.ac.kr/xml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:SchemaLocation="http://mm.sookmyung.ac.kr.xml
+                            Schema.xsd">
+
+    <head>
+        <title>중2병없는 이 영화가 선사한 의외의 감동</title>
+        <subtitle>(리뷰)영화 &lt;종착역&gt;</subtitle>
+        <publisher>오마이스타</publisher>
+        <date>21.09.27</date>
+        <time>10:52</time>
+        <written>
+            <name>
+                <fname>혜령</fname>
+                <lname>장</lname>
+            </name>
+            <email edress="dona03@sookmyung.ac.kr">
+            dona03@sookmyung.ac.kr </email>
+        </written>
+        <copyright>오마이뉴스</copyright>
+    </head>
+
+<!--기사 본문 내용 시작-->
+    <body>
+        <contents>
+        <pic file="poster.gif"/>
+                누구나 순수했던 시절이 있다. 
+               아직 세상 밖을 나가보지 않아 울타리 안의 세상이 전부이던 때. 
+               부모님과 선생님의 말씀을 잘 따르고 하지 말라는 것과 하라는 것만 잘하면 된다고 믿었던 때가 그립다.
+
+               유치원을 다니다 초등학교에 가면 중학교에 가고 마음먹은 대로 이루어지는 게 인생이라 생각하겠지만. 
+               이게 끝이 아니다. 중학교에 가면 고등학교를 진학하고 입시나 직업 교육으로 대학이나 사회로 향한다. 
+               사회에 나아갔다고 다 끝난 것 같지만 또 다른 라운드의 시작이다. 
+               이처럼 태어나 삶을 살아가야 하는 숙명은 즐거움만 있지 않고 
+               어려움과 좌절, 슬픔이 교차하는 허들 경기나 마찬가지다.
+
+               14살, 처음 만나는 끝과 시작
+ 
+                &lt;종착역&gt;은 중학교 1학년 소녀 넷이 여름 방학을 맞아 세상의 끝에 다녀온 이야기다. 
+                우연히 사진동아리에서 친구가 된 네 여중생(시연, 연우, 소정, 송희)은 이번 여름방학에 뭘 할지 분주하다. 
+                수다스럽게 계획을 나누던 중 선생님은 스물일곱 번 찍을 수 있는 일회용 필름 카메라를 나눠 주며 
+                세상의 끝을 담아 오라는 황당한 숙제를 내준다.
+ 
+                세상의 끝이라고? 무슨 말인지 알아들을 수 없던 아이들은 고민 끝에 전철로 갈 수 있는 마지막 역을 가보기로 한다. 
+                그중에서 신창역은 1호선의 종착역 중 하나니까. 뚝 끊어지는 절벽이 연상돼 무언가가 기다리고 있을 거란 추측에서였다. 
+                시연의 그럴듯한 제안에 모두 동의했고 그날로 무작정 신창역을 향해 출발했다.
+        </contents>
+    </body>
+</article>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <meta charset="UTF-8">
+        <Script language="Javascript"> //파일 읽어오기
+            var xdoc = new ActiveXObject("Msxml.DOMDocument");
+            xdoc.async = false;
+            var filename='Document1.xml';
+            xdoc.load(filename);
+            var xroot = xdoc.documentElement;
+
+            function success(){ //파일 오류 발생하는지 확인
+                if (xdoc.parseError.reason) //오류 발생했을 시
+                    alert("에러 위치 :" + xdoc.parseError.line + "번째 라인 " + xdoc.parseError.linepos 
+                        + "번째 문자\n\n에러 이유 : " + xdoc.parseError.reason);
+                else  //오류 발생 안했을 시
+                    alert("[파일로드 성공]\n루트 엘리먼트 이름은 "+xroot.nodeName+"이고,\n뉴스요약 노드의 이름은 "+xroot.firstChild.nodeName+"입니다");
+            };
+            
+            function nodeappend(){  //뉴스목록의 맨 앞자리에 뉴스를 하나 추가
+                var newNode=xdoc.createElement("뉴스"); //뉴스노드 생성
+                var node = xroot.firstChild; 
+                xroot.insertBefore(newNode, node); //뉴스목록의 맨 앞자리에 뉴스 노드 삽입
+                alert("결과 문서 :\n "+xdoc.xml);
+            }    
+
+            var xroot = xdoc.documentElement; 
+
+            function childappend(){ // 뉴스목록 노드 구조에 맞춰 자식노드 삽입
+                var node = xroot.firstChild; // 뉴스목록의 첫번째 노드
+                var file  = xdoc.createElement("file"); //각 노드들 생성
+                var title  = xdoc.createElement("title");
+                var titleText = xdoc.createTextNode("'넷플릭스' 이어 '디즈니+' 손잡은 LGU+…IPTV 시장 지각변동 일으키나");
+                var uploadTime  = xdoc.createElement("uploadTime");
+                var date  = xdoc.createElement("date");
+                var dateText = xdoc.createTextNode("21.09.26");
+                var time  = xdoc.createElement("time");
+                var timeText = xdoc.createTextNode("19:19");
+                var write  = xdoc.createElement("write");
+                var name = xdoc.createElement("name");
+                var fname = xdoc.createElement("fname");
+                var fnameText = xdoc.createTextNode("창규");
+                var lname = xdoc.createElement("lname");
+                var lnameText = xdoc.createTextNode("이");
+                uploadTime.appendChild(date);
+                uploadTime.appendChild(time);
+                write.appendChild(name); //write 밑에 name 노드 삽입
+                name.appendChild(fname); //name 밑에 fname, lanme 삽입
+                name.appendChild(lname);
+                fname.appendChild(fnameText);
+                lname.appendChild(lnameText);
+                title.appendChild(titleText);
+                date.appendChild(dateText);
+                time.appendChild(timeText);
+                node.appendChild(file); // 첫번째 노드 밑에 각 노드들 삽입
+                node.appendChild(title);
+                node.appendChild(uploadTime);
+                node.appendChild(write);
+
+                node=node.childNodes(0);
+                node.setAttribute('name','news.xml');
+                alert("결과 문서 :\n "+xdoc.xml);
+            }   
+
+            function RemoveWriter(){ //두번째 뉴스의 기자 노드 삭제
+                elmt = xroot.firstChild;
+                elmt=elmt.nextSibling; // 두번째 뉴스의 노드를 nextSilbling을 이용해 찾기
+                var elmt=elmt.nextSibling; 
+                var node=elmt.removeChild(elmt.childNodes(4)); //write노드 삭제
+                alert("두번째 뉴스 정보:\n"+elmt.xml);
+            }
+
+            function appendWriter(){
+                elmt = xroot.firstChild;
+                elmt=elmt.nextSibling;
+                var elmt=elmt.nextSibling; 
+                var node=elmt.childNodes(4);  //node에 write노드 위치했던 부분 넣기
+                var write  = xdoc.createElement("write"); //write노드 생성
+                var name = xdoc.createElement("name"); //name노드 생성
+                var fname = xdoc.createElement("fname"); //fname노드 생성
+                var lname = xdoc.createElement("lname"); //laname노드 생성
+                var firstname = xdoc.createTextNode("길동"); //fname에 들어갈 텍스트 생성
+                var lastname = xdoc.createTextNode("홍"); //lname에 들어갈 텍스트 생성
+                write.appendChild(name); //write밑에 name노드 삽입
+                name.appendChild(fname); //name 밑에 fname, lname삽입
+                name.appendChild(lname);
+                fname.appendChild(firstname); //fname밑에 텍스트 삽입
+                lname.appendChild(lastname); //lname 밑에 텍스트 삽입
+                elmt.insertBefore(write, node); //write노드가 위치했던 부분에 새로운 write노드 삽입
+                alert("두번째 뉴스 정보:\n"+elmt.xml);
+            }
+            function ReplaceWriter(){ //첫번째 기자 이름 수정
+                var elmt = xroot.firstChild.nextSibling;  
+                var node=elmt.childNodes(4); 
+                var write  = xdoc.createElement("write"); //write와 그 밑의 노드들 생성
+                var name = xdoc.createElement("name");
+                var fname = xdoc.createElement("fname");
+                var lname = xdoc.createElement("lname");
+                var firstname = xdoc.createTextNode("지매"); //새로운 이름 넣기
+                var lastname = xdoc.createTextNode("일");
+                write.appendChild(name);
+                name.appendChild(fname);
+                name.appendChild(lname);
+                fname.appendChild(firstname);
+                lname.appendChild(lastname);
+                elmt.replaceChild(write,node); // 새로 만든 노드와 교체
+                alert("첫번째 뉴스 정보 :\n"+elmt.xml);
+            }
+
+            function attribute(){ //속성 추가
+                var elmt = xroot.firstChild.nextSibling;  //첫번째 뉴스 
+                var node=elmt.childNodes(1); //title위치
+                node.setAttribute('lang','kr'); //lang="kr"이라는 속성 삽입
+                alert("1번 뉴스 정보 :\n"+elmt.xml);
+            }
+
+            function ReplaceAttribute(){
+                var elmt = xroot.firstChild.nextSibling;  //첫번째 뉴스
+                var node=elmt.childNodes(1);
+                node.setAttribute('lang','en'); //lang="en"으로 속성 수정 
+                alert("1번 뉴스 정보 :\n"+elmt.xml);
+            }
+
+            function RemoveAttribute(){
+                var elmt = xroot.firstChild.nextSibling;  //첫번째 뉴스
+                var node=elmt.childNodes(1);
+                node.removeAttribute('lang'); //속성 삭제
+                alert("1번 뉴스 정보 :\n"+elmt.xml);
+            }
+            
+        </script>
+    </HEAD>
+    <BODY>
+        <p>루트엘리먼트와 뉴스정보 <input type="button" value="문서읽기" onClick='success()'></p>
+        <p>뉴스노드 삽입 <input type="button" value="전체보기 1" onClick='nodeappend()'></p>
+        <p>뉴스목록노드 삽입 <input type="button" value="전체보기 2" onClick='childappend()'></p>
+        <p>두번째 뉴스의 기자 노드 삭제 <input type="button" value="뉴스보기1" onClick='RemoveWriter()'></p>
+        <p>두번째 뉴스의 기자 노드 삽입 <input type="button" value="뉴스보기2" onClick='appendWriter()'></p>
+        <p>첫번째 뉴스의 기자 노드 수정 <input type="button" value="뉴스보기3" onClick='ReplaceWriter()'></p>
+        <p>첫번째 뉴스목록의 제목에 속성삽입 <input type="button" value="속성(1)" onClick='attribute()'></p>
+        <p>첫번째 뉴스목록의 제목에 속성수정 <input type="button" value="속성(2)" onClick='ReplaceAttribute()'></p>
+        <p>첫번째 뉴스목록의 제목에 속성제거 <input type="button" value="속성(3)" onClick='RemoveAttribute()'></p>
+
+    </BODY>
+</HTML>

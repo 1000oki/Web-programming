@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:element name="News">
+   <xs:complexType>
+      <xs:sequence> <!--INFO-->
+         <xs:attribute name="Category" use="optional" default="의료"/>
+         <xs:sequence> <!--writer-->
+               <xs:simpleType name="Email">
+                  <xs:restriction>
+                     <xs:pattern value="[_\-a-zA-Z0-9\.\+]+@[a-zA-Z0-9](\.?[\-a-zA-Z0-9]*[a-zA-Z0-9])*"/>
+                  </xs:restriction>
+               </xs:simpleType>
+            <xs:group name="Name">
+               <xs:all>
+                  <xs:element name="LName" type="string"/>
+                  <xs:element name="FName" type="string"/>
+               </xs:all>
+            </xs:group>
+         </xs:sequence>
+         <xs:sequence> <!--upload time-->
+            <xs:simpleType>
+                     <xs:list>
+
+                        <element name="Year">
+                           <simpleType>
+                              <restriction base="nonNegativeInteger"/>
+                           </simpleType>
+                        </element>
+
+                        <element name="Month">
+                           <simpleType>
+                              <restriction base="nonNegativeInteger">
+                                    <minExclusive value="1"/>                    
+                                    <maxExclusive value="12"/>
+                              </restriction>
+                           </simpleType>
+                        </element>
+
+                        <element name="Day">
+                           <simpleType>
+                              <restriction base="nonNegativeInteger">
+                                    <minExclusive value="1"/>                    
+                                    <maxExclusive value="31"/>
+                              </restriction>
+                           </simpleType>
+                        </element>
+
+                     </xs:list>
+                     <xs:list>
+                        <element name="Hour">
+                           <simpleType>
+                              <restriction base="nonNegativeInteger">
+                                    <maxExclusive value="24"/>
+                              </restriction>
+                           </simpleType>
+                        </element>
+
+                        <element name="Minute">
+                           <simpleType>
+                              <restriction base="nonNegativeInteger">
+                                    <maxExclusive value="60"/>
+                              </restriction>
+                           </simpleType>
+                        </element>
+
+                     </xs:list>
+                  </xs:simpleType>
+         </xs:sequence>
+         <xs:sequence> <!--copyright-->
+            <xs:attribute name="Company" use="required"/>
+            <xs:choice name="Statement" type="string"/>
+         </xs:sequence>  
+         <xs:sequence> <!--location-->
+            <xs:attribute name="URL" use="optional"/>
+            <choice minOccurs="0" maxOccurs="unbound">
+               <xs:element name="Page"> </xs:element>
+               <xs:element name="Section"> </xs:element>
+            </choice>
+         </xs:sequence>    
+      </xs:sequence>
+
+      <xs:sequence><!--TITLE-->
+         <xs:group name="Title">
+            <xs:element name="MainTitle"/>
+            <xs:choice name="SubTitle"/>
+         </xs:group>
+      </xs:sequence>
+
+      <xs:sequence> <!--CONTENT-->
+         <xs:attribute name="Image" use="optional"/>
+         <xs:group>
+            <xs:choice name="PTitle" type="string"/>
+            <xs:complexType name="Paragraph"/>
+         </xs:group>
+      </xs:sequence>
+
+   </xs:complexType>
+</xs:element>
+</xs:schema>

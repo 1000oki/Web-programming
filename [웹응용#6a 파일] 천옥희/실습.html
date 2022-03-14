@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <meta charset="UTF-8">
+        <Script language="Javascript">
+            var xdoc = new ActiveXObject("Msxml.DOMDocument");
+            xdoc.async = false;
+            var filename='Document1.xml'
+            xdoc.load(filename);
+            var xroot = xdoc.documentElement;
+
+            function success(){
+                alert("[파일로드 성공]\n 파일이름은" +filename+" 이고, \n루트 엘리먼트 이름은 "+xroot.nodeName);
+            };
+
+            function find(){
+                var curr = xroot.firstChild.nextSibling;
+                curr = curr.childNodes.item(1); alert("검색 결과 : "+curr.text);
+                    
+            }
+
+            function num(){
+                if (xroot.hasChildNodes) {
+                    alert('뉴스 갯수 : ' + xroot.childNodes.length); }
+                else alert('No Child'); 
+            }
+            function listname(){
+                var curr = xroot.firstChild;
+                alert("뉴스 목록의 이름 <"+curr.nodeName+"> 입니다.");
+
+            }
+            function liststruct(){
+                var curr = xroot.firstChild;
+                curr1=curr.childNodes(0);
+                curr2=curr.childNodes(1);
+                curr3=curr.childNodes(2);
+                curr4=curr.childNodes(3);
+                curr5=curr.childNodes(4);
+                alert("뉴스 목록의 이름 \n <"+curr.nodeName+">\n<"+curr1.nodeName+">\n<"+curr2.nodeName+">\n<"+curr3.nodeName+">\n<"+curr4.nodeName+">\n<"+curr5.nodeName+"> \n</" +curr.nodeName+">" );
+
+            }
+            
+            function publisher(){
+                var node = xroot.firstChild;
+                var node1 = node.selectSingleNode("copyright");  
+                if (node1.text=="왓챠뉴스"){
+                    var node2 = node.selectSingleNode("title");
+                    var node3 = node.selectSingleNode("uploadTime");
+                    var node4 = node.selectSingleNode("write");
+                    alert(node1.text+" 신문사\n\n - 뉴스제목 : "+node2.text+"\n\n - 업로드시간 : "+node3.text+"\n\n - 작성기자 : "+node4.text); 
+                }
+            }
+
+            function division(){
+                var node = xroot.firstChild;
+                var node1 = node.selectSingleNode("copyright");  
+                var node2 = node.selectSingleNode("title");
+                alert("[뉴스이름] "+ node1.text+" : 1 \n\n 첫번째 기사 제목 : "+node2.text); 
+                
+            }
+
+            function divisionlist(){
+                var node = xroot.firstChild;
+                var node1 = node.selectSingleNode("copyright");  
+                var node2 = node.selectSingleNode("title");
+                alert("[뉴스이름] "+ node1.text+" : 1개 \n\n [1] : "+node2.text); 
+                
+            }
+        </script>
+    </HEAD>
+    <BODY>
+        <p>파일이름과 루트엘리먼트의 이름 확인 <input type="button" value="문서읽기" onClick='success()'></p>
+        <p>두번째 뉴스의 제목 <input type="button" value="검색 1" onClick='find()'></p>
+        <p>포함하고 있는 뉴스의 갯수 <input type="button" value="검색 2" onClick='num()'></p>
+        <p>뉴스목록 이름 <input type="button" value="뉴스목록 노드명" onClick='listname()'></p>
+        <p>뉴스목록 구조 <input type="button" value="뉴스목록 구조명" onClick='liststruct()'></p>
+        <p>신문사 <input type="button" value="검색 3" onClick='publisher()'></p>
+        <p>신문사분류 <input type="button" value="검색 4" onClick='division()'></p>
+        <p>신문사분류2 <input type="button" value="검색 5" onClick='divisionlist()'></p>
+
+
+    </BODY>
+    </HTML>

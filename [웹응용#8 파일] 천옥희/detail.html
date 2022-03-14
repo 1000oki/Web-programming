@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+        <style>
+            BODY{background-color:bisque}
+            h3{text-align: center;  }
+            #box{border-style:solid; text-align:center; margin-left:50px; margin-right:50px;}
+            #day, #email{font-size:13px; color:gray;}
+        </style>
+        <script>
+            var xdoc, xroot;
+            $(function(){
+                $.ajax({
+                        url: 'Document1.xml' ,
+                        type: 'GET',
+                        dataType: 'xml' ,
+                        error: function(xhr) {alert("파일 로딩 에러 : " + xhr.statusText ); },  
+                        success: function(result) { 
+                            xdoc = result;
+                            xroot = result.documentElement;
+                            var all_news="";
+                            var num=0;  
+                            $(xdoc).find("news").each(function() {
+                                num+=1;
+                                newstitle = $(this).find("title").text() ;
+                                newsreporter = $(this).find("lname").text()+$(this).find("fname").text() ;
+                                newspublisher=$(this).find("publisher").text();
+                                newsdate=$(this).find("date").text();
+                                newstime= $(this).find("time").text();
+                                newsurl=$(this).find("file").attr("name");
+                                newsemail=$(this).find("email").attr("edress");
+                                news="뉴스 "+ num +"<br><span id='day'>"+newsdate+" "+newstime+"</span><br>제목 : <a href="+newsurl+">"+newstitle + "</a><br>기자 : "+ newsreporter+" <span id='email'>( " + newsemail+")</span> <br>신문사 : "+newspublisher+"<hr>"
+                                $("#result"+num).html(news);
+                                }); 
+                            }
+                        });  
+                    });
+        </script>
+    </HEAD>
+    <BODY>
+        <h3>뉴스 요약 자세히 보기</h3>
+        <div id="box">
+        <p id="result1"> </p>
+        <p id="result2"> </p>
+        <p id="result3"> </p>
+        <p id="result4"> </p>
+        <p id="result5"> </p>
+        <p id="result6"> </p>
+        </div>
+    </BODY>
+</HTML>

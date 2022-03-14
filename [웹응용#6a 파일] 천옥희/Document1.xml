@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<list>
+    <news>
+      <file name="기사1_송예나.xml"/>
+        <title>추석에 뭐 보지? 왓챠에서만 볼 수 있는 추천작 6</title>
+        <copyright>
+          <publisher>왓챠뉴스</publisher>
+        </copyright>
+        <uploadTime>
+          <date>21.09.15</date>
+          <time>11:37</time> 
+        </uploadTime>
+        <write>
+            <name>
+                <fname>에디터</fname>
+                <lname>일동</lname>
+            </name>
+            <email edress="watcha@watch.com"/>
+        </write>
+   </news>
+    
+    <news>
+      <file name="기사2_송예나.xml"/>
+        <title>중2병없는 이 영화가 선사한 의외의 감동</title>
+        <copyright>
+          <publisher>오마이스타</publisher>
+        </copyright>
+        <uploadTime>
+          <date>21.09.27</date>
+          <time>10:52</time> 
+        </uploadTime>
+        <write>
+            <name>
+                <fname>혜령</fname>
+                <lname>장</lname>
+            </name>
+            <email edress="dona03@sookmyung.ac.kr"/>
+        </write>
+  </news>
+  
+  <news>
+      <file name="new1(천옥희).xml"/>
+        <title>10월말 위드 코로나" 확진자 역대 2번째 날에 총리가 한 말</title>
+        <copyright>
+          <publisher>파이낸셜뉴스</publisher>
+        </copyright>
+        <uploadTime>
+          <date>21.09.26</date>
+          <time>10:31</time> 
+        </uploadTime>
+        <write>
+            <name>
+                <fname>창기</fname>
+                <lname>홍</lname>
+            </name>
+            <email edress="ck7024@fnnews.com"/>
+        </write>
+  </news>
+    
+<news>
+  <file name="new2(천옥희).xml"/>
+        <title>'넷플릭스' 이어 '디즈니+' 손잡은 LGU+…IPTV 시장 지각변동 일으키나</title>
+        <copyright>
+        </copyright>
+        <uploadTime>
+          <date>21.09.26</date>
+          <time>19:19</time> 
+        </uploadTime>
+        <write>
+            <name>
+                <fname>창규</fname>
+                <lname>이</lname>
+            </name>
+            <email edress="yellowapollo@news1.kr"/>
+        </write>
+  </news>
+  
+  <news>
+    <file name="남희_기사1.xml"/>
+        <title>''마이 네임' '지옥' '먹보와 털보'…넷플릭스, 차기작 공개</title>
+        <copyright>
+        </copyright>
+        <uploadTime>
+          <date>21.09.26</date>
+          <time>19:09</time> 
+        </uploadTime>
+        <write>
+            <name>
+                <fname>병호</fname>
+                <lname>정</lname>
+            </name>
+            <email edress="yellowapollo@news1.kr"/>
+        </write>
+  </news>
+    
+
+<news>
+  <file name="남희_기사2.xml"/>
+        <title>'넷플릭스' 이어 '디즈니+' 손잡은 LGU+…IPTV 시장 지각변동 일으키나</title>
+        <copyright>
+        </copyright>
+        <uploadTime>
+          <date>21.09.26</date>
+          <time>19:19</time> 
+        </uploadTime>
+        <write>
+            <name>
+                <fname>창규</fname>
+                <lname>이</lname>
+            </name>
+            <email edress="yellowapollo@news1.kr"/>
+        </write>
+  </news>
+ 
+    
+</list>

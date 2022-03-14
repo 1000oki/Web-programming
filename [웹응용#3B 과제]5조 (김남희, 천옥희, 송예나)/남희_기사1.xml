@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--ver1-->
+
+<newspaper
+        xmlns="http://it.sookmyung.ac.kr/xml"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://it.sookmyung.ac.kr/xml
+                                                        basic_final.xsd" >
+  <news>
+    <basic>
+      <reporter>
+        <reporter_name>이창규</reporter_name>
+        <reporter_email is_email="true">yellowapollo@news1.kr</reporter_email>
+      </reporter>
+      <date>
+        <create>
+          <year>2021</year>
+          <month>9</month>
+          <day>26</day>
+          <time>19:09:58</time>
+        </create>
+        <update is_update="true">
+          <year>2021</year>
+          <month>9</month>
+          <day>26</day>
+          <time>19:19:56</time>
+        </update>
+      </date>
+    </basic>
+    
+    <contents>
+      <title>'넷플릭스' 이어 '디즈니+' 손잡은 LGU+…IPTV 시장 지각변동 일으키나</title>
+      <subtitle is_subtitle="true">디즈니+, 11월12일 국내 서비스…LGU+, 요금제 및 리모콘 준비</subtitle>
+      <article>
+        <p>월트디즈니 컴퍼니 코리아(디즈니코리아)가 온라인동영상서비스(OTT)인 '디즈니플러스(+)'를 오는 11월 국내에 서비스할 예정인 가운데 LG유플러스가 자사의 IPTV와 모바일을 통해 디즈니+를 선보인다.
+        </p>
+        <p>앞서 '넷플릭스' 효과를 제대로 본 LG유플러스가 이번에는 디즈니+를 업고 국내 IPTV 시장에 지각변동을 가져올 수 있을지 주목된다.
+        </p>
+      </article>
+    </contents>
+    
+    <option>
+      <picture is_pic="true">
+        <pic_source>https://image.news1.kr/system/photos/2021/9/26/4986834/article.jpg/dims/optimize</pic_source>
+      </picture>
+      <tags is_hash="true">
+        <tag hash="디즈니">#디즈니</tag>
+        <tag hash="디즈니 플러스">#디즈니 플러스</tag>
+      </tags>
+    </option>
+  </news>
+</newspaper>

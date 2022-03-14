@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<News>
+    <Info category="경제">
+        <Writer>
+            <Name>
+                <FName>이</FName>
+                <LName>경탑</LName>
+            </Name>
+            <Email>hangang@edaily.co.kr</Email>  
+        </Writer>
+        <UploadTime>
+          <Date>  
+                <Year>2003</Year>
+                <Month>07</Month>
+                <Day>28</Day>
+          </Date>
+          <Time>
+              <Hour>10</Hour>
+              <Min>36</Min>
+          </Time>
+          </UploadTime>
+          <Copyright>
+              <Company>이데일리</Company>
+              <Statement>All rights reserved. 무단 전재 및 재배포 금지.</Statement>
+          </Copyright>
+          <Location url="https://news.naver.com/main/read.naver?mode=LSD&mid=sec&sid1=101&oid=018&aid=0000057839"/>
+    </info>
+    <Title>
+        <MainTitle>인컴, 경북대와 XML기반 의료정보시스템 개발</MainTitle>
+    </Title>
+    <Content>
+        [edaily 이경탑기자] 인컴(47370)아이앤씨는 경북대와 XML기반 차세대의료정보시스템을 
+        공동 개발키로 했다고 28일 밝혔다.
+        이번 사업은 산학협동의 일환에서 진행되는 사업으로 인컴의 XML어플리케이션 서버(엑시마 네오) 기증과 
+        국제표준인 HL7(Health Level:의료정보표준)을 수용하는 XML기반 차세대 의료정보시스템이다.
+        회사측은 "경북대 지능형 진료지원 및 정보공유 시스템 개발 연구소가지난해 12월 보건복지부 한국보건산업진흥원의 
+        2002년 하반기보건의료기술진흥사업과제의 하나로 선정돼 오는 2008년 11월까지 총64억원의 연구비를 지원받게 된다"고 전했다.
+      </Content>
+</news>

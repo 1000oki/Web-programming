@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<article
+    xmlns="http://it.sookmyung.ac.kr/xml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:SchemaLocation="http://mm.sookmyung.ac.kr.xml
+                            Schema.xsd">
+
+    <head>
+        <title>추석에 뭐 보지? 왓챠에서만 볼 수 있는 추천작 6</title>
+        <subtitle>긴 연휴의 아쉬움을 달래줄 명작 선택지.</subtitle>
+        <publisher>왓챠뉴스</publisher>
+        <date>21.09.15</date>
+        <time>11:37</time>
+        <written>
+            <name>
+                <fname>에디터</fname>
+                <lname>일동</lname>
+            </name>
+            <email edress="watcha@watch.com">
+                watcha@watch.com </email>
+        </written>
+        <copyright>왓챠</copyright>
+    </head>
+
+<!--기사 본문 내용 시작-->
+    <body>
+        <contents>
+        직장 생활을 하다 보면 업무 고충이 아닌 인간관계와 권력에 의한 부조리함을 겪게 될 때 
+        말로 설명하기 어려운 자괴감과 가슴 속에 품은 사직서를 꺼내기 마련이다. 
+        7년 만에 다시 돌아온 &lt;한자와 나오키(2020)&gt;의 평균 별점은 4.5. 
+        실제 일본에서 높은 시청률을 기록하고 왓챠에서 작품을 감상한 이용자들의 호평을 아끼지 않은 이 작품은 
+        불합리한 조직에 맞서 정의구현을 실현하는 회사원의 행보를 그리는데, 
+        보고 있으면 가슴은 웅장해지고 묵은 체증이 씻겨 내려가는 기분을 느낄 수 있다.
+        <pic file="poster.gif"/>
+        </contents>
+    </body>
+
+
+</article>

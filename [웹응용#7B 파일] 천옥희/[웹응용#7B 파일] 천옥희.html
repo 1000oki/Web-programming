@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+        <script>
+            var xdoc, xroot;
+            $(function(){
+                $("#read").click(function(){  
+                    $.ajax({
+                        url: 'Document1.xml' ,
+                        type: 'GET',
+                        dataType: 'xml' ,
+                        error: function(xhr) {alert("파일 로딩 에러 : " + xhr.statusText ); },  
+                        success: function(result) { 
+                            xdoc = result;
+                            xroot = result.documentElement;
+                            alert("파일로드 성공!\n루트 엘리먼트 노드의 이름 : " + xroot.nodeName);
+                        }
+                    });  
+                });
+            });
+
+            function news_number()  {  
+                $xnum = $(xroot).find("news"); alert("뉴스 갯수 : "+$xnum.length);    
+            }
+
+            function news_child()  {  
+                $xdata = $(xroot).children().first(); alert($xdata.html()); 
+            }
+
+            function news_child2()  {  
+                $xdata = $(xroot).children().eq(1).find("title");
+                alert("뉴스2 제목 : "+$xdata.html()); 
+            }
+
+            function news_property(){
+                $xdata =  $(xroot).find("email"); alert("기자 이메일 속성 : "+$xdata.attr("edress"));
+            }
+
+            function news_list()  {  
+                var all_news="";
+                var num=0;  
+                $(xdoc).find("news").each(function() {
+                    num+=1;
+                    all_news += "뉴스"+ num +" : "+ $(this).find("title").text()  +' , '+  $(this).find("publisher").text() +' , '+  $(this).find("lname").text()+$(this).find("fname").text() +' , '+  $(this).find("date").text()+' , '+  $(this).find("time").text() +'\n' ;
+                });
+                alert(all_news);
+            }
+
+        </script> 
+    </HEAD>
+    <Body>
+        <p><input type="button" id="read" value="문서읽기" /> </p>
+        <p><input type="button" id="search1" onClick="news_number()" value="검색1" /> </p>
+        <p><input type="button" id="search2" onClick="news_child()" value="검색2" /> </p>
+        <p><input type="button" id="search3" onClick="news_child2()" value="검색3" /> </p>
+        <p><input type="button" id="property" onClick="news_property()" value="기자 이메일 속성" /> </p>
+        <p><input type="button" id="list" onClick="news_list()" value="뉴스목록" /> </p>
+    </Body>
+</HTML>

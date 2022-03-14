@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <style>
+            #square{border-style:solid}
+            #box{border-style:double; padding:30px; margin-left:100px; margin-right:900px; }
+            #clear{margin-left:100px}
+            #Box1,#Box2,#Box3{border-style:double; padding:30px}
+            #Box3_1,#Box3_2,#Box3_3{border-style:double; padding:30px}
+            .pd{padding : 30px}
+            #clear1{margin-left:30px}
+
+        </style>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+        <script>
+            $(function(){
+                //문제1
+                //박스 색상 클릭 시 색상 변경 함수
+                $("#red").on("click",function(){
+                    $("#box").css("background-color", "red"); 
+                })
+                $("#green").on("click",function(){
+                    $("#box").css("background-color", "green"); 
+                })
+                $("#blue").on("click",function(){
+                    $("#box").css("background-color", "blue"); 
+                })
+                $("#cyan").on("click",function(){
+                    $("#box").css("background-color", "cyan"); 
+                })
+                $("#magenta").on("click",function(){
+                    $("#box").css("background-color", "magenta"); 
+                })
+                $("#yellow").on("click",function(){
+                    $("#box").css("background-color", "yellow"); 
+                })
+                $("#clear").on("click",function(){
+                    $("#box").css("background-color", "white"); 
+                })
+
+                //문제2
+                var cur_box_number; //박스번호에 따른 박스아이디 저장할 변수
+                $("#1").on("click",function(){
+                    cur_box_number="#Box1"; 
+                })
+                $("#2").on("click",function(){
+                    cur_box_number="#Box2"; 
+                })
+                $("#3").on("click",function(){
+                    cur_box_number="#Box3"; 
+                })
+                //박스 색상 클릭 시 색상 변경 함수
+                $("#red1").on("click",function(){ 
+                    $(cur_box_number).css("background-color", "red");
+                })
+                $("#green1").on("click",function(){
+                    $(cur_box_number).css("background-color", "green"); 
+                })
+                $("#blue1").on("click",function(){
+                    $(cur_box_number).css("background-color", "blue"); 
+                })
+                $("#cyan1").on("click",function(){
+                    $(cur_box_number).css("background-color", "cyan"); 
+                })
+                $("#magenta1").on("click",function(){
+                    $(cur_box_number).css("background-color", "magenta"); 
+                })
+                $("#yellow1").on("click",function(){
+                    $(cur_box_number).css("background-color", "yellow"); 
+                })
+                $("#clear1").on("click",function(){ //색상 지우기 눌렀을 때
+                    $("#Box1").css("background-color", "white"); 
+                    $("#Box2").css("background-color", "white");
+                    $("#Box3").css("background-color", "white");
+                })
+
+                //문제3
+                var number=0; //추가할 박스 번호
+                //만들어진 박스들을 숨김
+                $("#Box3_1").hide();
+                $("#Box3_2").hide();
+                $("#Box3_3").hide();
+
+                ////박스 색상 클릭 시 박스 추가 함수, 버튼,색상 위에 마우스가 올라가면 글자 굵기 변경
+                $("#red2").on({
+                    click:function(){
+                        number = number+1;
+                        if(number == 1){
+                            $("#Box3_1").css("background-color", "red");
+                            $("#Box3_1").show();
+                        }
+                        else if(number == 2){
+                            $("#Box3_2").css("background-color", "red");
+                            $("#Box3_2").show();
+                        }
+                        else if(number == 3){
+                            $("#Box3_3").css("background-color", "red");
+                            $("#Box3_3").show();
+                        }
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+
+                $("#green2").on({
+                    click : function(){
+                        number = number+1;
+                        if(number == 1){
+                            $("#Box3_1").css("background-color", "green");
+                            $("#Box3_1").show();
+                        }
+                        else if(number == 2){
+                            $("#Box3_2").css("background-color", "green");
+                            $("#Box3_2").show();
+                        }
+                        else if(number == 3){
+                            $("#Box3_3").css("background-color","green");
+                            $("#Box3_3").show();
+                        }
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+
+                $("#blue2").on({
+                    click : function(){
+                        number = number+1;
+                        if(number == 1){
+                            $("#Box3_1").css("background-color", "blue");
+                            $("#Box3_1").show();
+                        }
+                        else if(number == 2){
+                            $("#Box3_2").css("background-color", "blue");
+                            $("#Box3_2").show();
+                        }
+                        else if(number == 3){
+                            $("#Box3_3").css("background-color", "blue");
+                            $("#Box3_3").show();
+                        }
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+
+                $("#cyan2").on({
+                    click : function(){
+                        number = number+1;
+                        if(number == 1){
+                            $("#Box3_1").css("background-color", "cyan");
+                            $("#Box3_1").show();
+                        }
+                        else if(number == 2){
+                            $("#Box3_2").css("background-color", "cyan");
+                            $("#Box3_2").show();
+                        }
+                        else if(number == 3){
+                            $("#Box3_3").css("background-color", "cyan");
+                            $("#Box3_3").show();
+                        }
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+                $("#magenta2").on({
+                    click : function(){
+                        number = number+1;
+                        if(number == 1){
+                            $("#Box3_1").css("background-color", "magenta");
+                            $("#Box3_1").show();
+                        }
+                        else if(number == 2){
+                            $("#Box3_2").css("background-color", "magenta");
+                            $("#Box3_2").show();
+                        }
+                        else if(number == 3){
+                            $("#Box3_3").css("background-color", "magenta");
+                            $("#Box3_3").show();
+                        }
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+                $("#yellow2").on({
+                    click : function(){
+                        number = number+1;
+                        if(number == 1){
+                            $("#Box3_1").css("background-color", "yellow");
+                            $("#Box3_1").show();
+                        }
+                        else if(number == 2){
+                            $("#Box3_2").css("background-color", "yellow");
+                            $("#Box3_2").show();
+                        }
+                        else if(number == 3){
+                            $("#Box3_3").css("background-color", "yellow");
+                            $("#Box3_3").show();
+                        }
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+
+                //삭제 버튼 클릭 시 박스 해당 박스 삭제 함수
+                $("#clear3_1").on({
+                    click : function(){
+                        $("#Box3_1").hide();
+                        number = 0;
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+
+                $("#clear3_2").on({
+                    click : function(){
+                        $("#Box3_2").hide();
+                        number = 1;
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+
+                $("#clear3_3").on({
+                    click : function(){
+                        $("#Box3_3").hide();
+                        number = 2;
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+                 
+                //모두 삭제 클릴 시 모든 박스 삭제 함수
+                $("#clear3").on({
+                    click : function(){
+                        $("#Box3_1").hide();
+                        $("#Box3_2").hide();
+                        $("#Box3_3").hide();
+                        number = 0;
+                    },
+                    mouseover: function(){      
+                        $(this).css("font-weight", "bold"); },
+                    mouseout: function() {    
+                        $(this).css("font-weight", "normal"); }
+                })
+            })
+
+        </script>
+    </HEAD>
+    <BODY>
+        <p>1. 박스의 색상 선택하기</p>
+        <div id="square" >
+            <p>박스의 색상을 선택하시오 :<span id="red">Red,</span> <span id="green">Green,</span> <span id="blue">Blue</span> <span id="cyan">Cyan,</span> <span id="magenta">Magenta,</span> <span id="yellow">Yellow</span></p>
+            <p id="box">Box 1</p>
+            <button id="clear">색상 지우기</button>
+        </div>
+        <p>2. 박스 3개의 색상 선택하여 비교하기</p>
+        <div id="square">
+            <p>*색상을 바꿀 박스 번호를 선택하시오 : <span id="1">(1), </span><span id="2">(2), </span><span id="3">(3)</span></p>
+            <p>*박스의 색상을 선택하시오 : <span id="red1">Red,</span> <span id="green1">Green,</span> <span id="blue1">Blue</span> <span id="cyan1">Cyan,</span> <span id="magenta1">Magenta,</span> <span id="yellow1">Yellow</span></p>
+            <p class="pd"><span id="Box1">Box1</span><span id="Box2">Box2</span><span id="Box3">Box3</span></p>
+            <button id="clear1">색상 지우기</button>
+        </div>
+        <p>3. 원하는 색상의 박스를 추가하기(최대 3개)</p>
+        <div id="square">
+            <p>추가할 박스의 색상을 선택하시오 : <span id="red2">Red,</span> <span id="green2">Green,</span> <span id="blue2">Blue</span> <span id="cyan2">Cyan,</span> <span id="magenta2">Magenta,</span> <span id="yellow2">Yellow</span></p>
+            <p class="pd"><span id="Box3"><button id="clear3">모두삭제</button></span><span id="Box3_1">Box1 <button id="clear3_1">삭제</button></span><span id="Box3_2">Box2 <button id=clear3_2>삭제</button></span><span id="Box3_3">Box3 <button id=clear3_3>삭제</button></span></p>
+        </div>
+    </BODY>
+</HTML>

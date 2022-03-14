@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!--ver1-->
+
+<newspaper
+        xmlns="http://it.sookmyung.ac.kr/xml"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://it.sookmyung.ac.kr/xml
+                                                        basic_final.xsd" >
+  <news>
+    <basic>
+      <reporter>
+        <reporter_name>정병호 기자</reporter_name>
+        <reporter_email is_email="true">yellowapollo@news1.kr</reporter_email>
+      </reporter>
+      <date>
+        <create>
+          <year>2021</year>
+          <month>9</month>
+          <day>26</day>
+          <time>19:09:58</time>
+        </create>
+        <update is_update="true">
+          <year>2021</year>
+          <month>9</month>
+          <day>26</day>
+          <time>19:19:56</time>
+        </update>
+      </date>
+    </basic>
+    
+    <contents>
+      <title>'마이 네임' '지옥' '먹보와 털보'…넷플릭스, 차기작 공개</title>
+      <subtitle is_subtitle="true">25일 글로벌 팬 이벤트 TUDUM 개최, 웹툰 원작 '지옥' 11월 19일 공개 확정</subtitle>
+      <article>
+        <p>동영상 플랫폼 넷플릭스가 25일 열린 글로벌 팬 이벤트 TUDUM(투둠)을 통해 공개를 앞둔 한국 작품을 소개했다.
+        </p>
+        <p> 이날 발표된 작품은 시리즈부터 영화, 예능, 데이팅 리얼리티쇼까지 다채로운 장르를 아우르고 있어 신선한 한국 콘텐츠를 기다리는 전 세계 시청자들의 기대감을 높였다.
+        </p>
+      </article>
+    </contents>
+    
+    <option>
+      <picture is_pic="true">
+        <pic_source>https://spnimage.edaily.co.kr/images/photo/files/NP/S/2021/09/PS21092600015.jpg</pic_source>
+      </picture>
+      <tags is_hash="true">
+        <tag hash="넷플릭스">#넷플릭스</tag>
+        <tag hash="마이네임">#마이네임</tag>
+      </tags>
+    </option>
+    
+  </news>
+</newspaper>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="news.css" ?>
+
+<News>
+  <Info Categort="의료">
+      <Writer >
+      <Email>ck7024@fnnews.com</Email>
+        <Name><LName>홍</LName><FName>창기</FName></Name>
+      </Writer>
+      <UploadTime>
+        <Date>
+          <Year>2021</Year>
+          <Month>09</Month>
+          <Day>26</Day>
+        </Date>
+      <Time>
+        <Hour>10</Hour>
+        <Minute>31</Minute>
+      </Time>
+    </UploadTime>
+    <Copyright Company="파이낸셜뉴스" >
+      <Statement>무단전재-재배포 금지</Statement>
+    </Copyright>
+    <Location Url ="https://www.fnnews.com/news/202109261026068866"/>
+  </Info>
+
+  <Title>
+    <MainTitle>10월말 "위드 코로나" 확진자 역대 2번째 날에 총리가 한 말 코로나 신규 확진자 3273명…폭증세에 첫 하루 3000명대</MainTitle>
+  </Title>
+
+  <Content Image="https://image.fnnews.com/resource/media/image/2021/09/24/202109240917456294_l.jpg">
+    <Text>
+      <Paragraph>김부겸 국무총리는 오늘 26일 "10월말 쯤 되면 일상회복이 되는 다음 단계, 위드코로나 말 쓰지 않고 단계적인 일상회복을 할 수 있다"고 말했다. 오늘은 코로나19 신규확진자가 역대 두번째로 많은 2771명으로 집계됐다.</Paragraph>
+      <Paragraph>김 총리는 오늘 오전 대전방송(TJB)·광주방송(KBC)·대구방송(TBC)·강원민방(G1)·부산경남방송(KNN)·전주방송(JTV)·청주방송(CJB)·울산방송(UBC)·제주방송(JIBS) 등 지역민영방송협회와 특별대담에서 '마스크를 벗는 것은 올해 안에 안 되느냐'는 질문을 받고 이같이 답했다.</Paragraph>
+      <Paragraph>그는 "10월말 정도 되면 전 국민 2차 접종, 소위 접종 완료자 분들이 18세 이상 국민 중에는 80%, 전 국민 기준 70% 달성될 것 같다"고 했다.</Paragraph>
+      <Paragraph>또 김 총리는 코로나19 퇴치와 관련, "전문가가 아니라 함부로 단정 지을 수는 없다"면서도 "빠르면 연말쯤 미국에서 먹는 치료제가 나오면 상대적으로 역병과 싸움에서 인류가 유리한 위치가 되겠다"고 내다봤다. 이어 그는 "그러면 우리가 생각하는 코로나 이전의 소중한 일상으로 되돌아가지 않을까"라고 밝혔다.</Paragraph>
+      <Paragraph>다만 김 총리는 단계적 일상 회복 국면에 들어가더라도 마스크는 계속 쓰는 등 불편을 감수해야 한다고 했다.</Paragraph>
+    </Text>
+  </Content>
+    
+</News>

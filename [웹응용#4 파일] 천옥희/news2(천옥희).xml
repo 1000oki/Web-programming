@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="news.css" ?>
+
+<News>
+  <Info Categort="의료">
+      <Writer>
+        <Email>mina@hani.co.kr</Email>
+        <Name><LName>김</LName><FName>미나</FName></Name>
+      </Writer>
+      <UploadTime>
+        <Date>
+          <Year>2021</Year>
+          <Month>09</Month>
+          <Day>25</Day>
+        </Date>
+      <Time>
+        <Hour>10</Hour>
+        <Minute>35</Minute>
+      </Time>
+    </UploadTime>
+    <Copyright Company="한겨레">
+      <Statement>무단전재-재배포 금지</Statement>
+    </Copyright>
+    <Location Url ="https://www.hani.co.kr/arti/society/health/1012678.html"/>
+  </Info>
+
+  <Title>
+    <MainTitle>코로나 신규 확진자 3273명…폭증세에 첫 하루 3000명</MainTitle>
+  </Title>
+
+  <Content Image="https://flexible.img.hani.co.kr/flexible/normal/970/606/imgdb/original/2021/0925/20210925500180.jpg">
+    <Text>
+      <Paragraph> 코로나19 신규 확진자가 3273명 발생하고, 7명이 사망했다. 국내에서 첫 확진자가 나온 지난해 1월20일 이후 615일 만에 일일 확진자 숫자가 처음으로 3천명을 넘어섰다.</Paragraph>
+      <Paragraph> 중앙방역대책본부는 25일 0시 기준 국내 지역사회 신규 확진자는 3245명이고, 국외 유입 신규 확진자는 28명으로 전체 신규 확진자는 3273명이라고 밝혔다. 이로써 국내 코로나19 누적 총 확진자는 29만8402명(해외 유입 확진자 1만4303명)으로 늘었다.</Paragraph>
+      <Paragraph>지역사회 신규 확진자 3245명 가운데 수도권에서 77.4%인 2512명이 확진됐다. 서울 1217명, 경기 1094명, 인천 201명이다. 비수도권에서는 대구 118명, 충남 91명, 대전 79명, 전북 67명, 충북 59명, 경북 57명, 강원 56명, 부산 51명, 경남 46명, 광주 30명, 전남 28명, 울산 26명, 제주 15명, 세종 10명이 새로 확진됐다. 위중증 환자 수는 339명 늘었다. 사망자는 7명 늘어 누적 2441명이다.</Paragraph>
+      <Paragraph>예방접종을 완료한 국민은 약 41만명 늘었다. 전날 백신 1차 접종을 받은 사람은 61만4616명이고, 2차 접종 등으로 접종을 완료한 사람은 41만3458명이었다. 이로써 인구 대비 1차 접종률은 73.5%(3713만5238명)이고, 접종 완료자 비율은 44.8%(2258만4312명)이다.</Paragraph>
+    </Text>
+  </Content>
+    
+</News>

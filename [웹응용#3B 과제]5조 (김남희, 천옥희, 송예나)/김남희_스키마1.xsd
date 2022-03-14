@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://news.sookmyung.ac.kr/xml"
+    xmlns:news="http://news.sookmyung.ac.kr/xml"
+    elementFormDefault="qualified" >
+
+    <xs:element name="list">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="head" type="news:summaryType"
+                    minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+   <xs:complexType name="summaryType">
+    <xs:sequence>
+      <xs:element name="news"  type="news:newsType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="newsType">
+    <xs:sequence>
+    <xs:element name="file"   type="xs:string" />
+      <xs:element name="title"   type="xs:string" />
+      <xs:element name="copyright" type="news:copyrightType" />
+      <xs:element name="uploadTime" type="news:uploadTimeType" />
+      <xs:element name="write" type="news:writeType" />
+    </xs:sequence>
+  </xs:complexType>
+
+<xs:complexType name="copyrightType">
+    <xs:sequence>
+      <xs:element name="publisher"   type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+<xs:complexType name="uploadTimeType">
+    <xs:sequence>
+      <xs:element name="date"   type="xs:string" />
+      <xs:element name="time"   type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+<xs:complexType name="writeType">
+    <xs:sequence>
+      <xs:element name="name"   type="news:nameType" />
+      <xs:element name="email"   type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+<xs:complexType name="nameType">
+    <xs:sequence>
+      <xs:element name="fname"   type="xs:string" />
+      <xs:element name="lname"   type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+
+
+</xs:schema>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<News>
+  <Info Category="의료">
+    <Writer>
+      <Email>hkkim@ytn.co.kr</Email>
+      <Name> 
+        <LName>김</LName>
+        <FName>형근</FName>
+      </Name>
+    </Writer>
+    <UploadTime>
+      <Date>
+        <Year>2021<Year>
+        <Month>09<Month>
+        <Day>25<Day>
+      </Date>
+      <Time>
+        <Hour>10<Hour>
+        <minute>27<minute>
+      </Time>
+    </UploadTime>
+    <Copyright Company="YTN">
+      <Satatement>무단전재 및 재배포 금지</Satatement>
+    </Copyright>
+    <Location>
+      <Url src="https://www.ytn.co.kr/_ln/0104_202109251027283521/"/>
+    </Location>
+  </Info>
+
+  <Title>
+    <MainTitle>라오스 박쥐에서 코로나19와 96.8% 일치하는 바이러스 발견</MainTitle>
+  </Title>  
+
+  <Content> 
+    <Img 
+    src="https://image.ytn.co.kr/general/jpg/2021/0925/202109251027283521_t.jpg"
+    />
+    <Text>
+      <Paragraph><![CDATA[라오스에 서식하는 박쥐에서 코로나19 바이러스와 96.8% 일치하는 바이러스가 새로 발견돼 학계에 보고됐습니다.<br> <br>
+
+지금까지 알려진 코로나바이러스 중에서는 코로나19 바이러스에 가장 가깝습니다.<br> <br>
+
+이는 코로나19 바이러스의 자연 기원설에 힘을 실어주는 것이자 인체를 감염시킬 수 있는 코로나바이러스 종이 더 많을 수 있다는 우려를 높여주는 것입니다.<br> <br>
+
+과학 저널 '네이처'의 온라인 뉴스 사이트인 네이처닷컴에 따르면 프랑스 파스퇴르연구소 연구팀은 라오스 북부 동굴에서 박쥐 645마리의 침과 배설물 시료를 채취해 분석한 결과 흔히 볼 수 있는 관박쥐 3종에서 코로나19 바이러스와 95% 이상 일치하는 바이러스를 발견했습니다.<br> <br>
+
+코로나19 바이러스는 인체 세포 표면의 ACE2라는 수용체에 달라붙어 인간을 감염시키는데, 새로 발견된 바이러스도 이와 거의 똑같은 수용체 결합 영역을 가진 것으로 나타났습니다.<br> <br>
+
+새로 발견된 바이러스 중 BANAL-52는 코로나19 바이러스와 96.8%나 일치하는 것으로 조사됐습니다.<br> <br>
+
+호주 시드니대학 바이러스학자 에드워드 홈즈는 이와 관련해 "코로나19 바이러스 수용체 결합 영역이 이전에 전혀 보지 못했던 것이어서 일각에서 실험실에서 만들어졌을 것이라는 추측을 제기했지만 라오스 박쥐에서 발견된 바이러스를 통해 이런 결합 영역이 자연에서 존재한다는 점이 확인됐다"고 말했습니다.<br> <br>
+
+연구팀은 관련 연구 결과를 정식 출간 전 논문을 모아놓는 '리서치 스퀘어'에 공개했으며 아직 동료평가가 이뤄지지 않았습니다. ]]></Paragraph>
+    </Text>
+  </Content>
+</News>
