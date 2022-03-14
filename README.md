@@ -11,8 +11,8 @@
 
 [웹응용 #4 news2(천옥희).xml](http://mm.sookmyung.ac.kr/~itx1910896/xml/news2(CheonOH).xml)
 
-[웹응용#7B](http://mm.sookmyung.ac.kr/~itx1910896/xml/CheonOH.html)
+[웹응용 #7B](http://mm.sookmyung.ac.kr/~itx1910896/xml/CheonOH.html)
 
-[웹응용#8 sample.html](http://mm.sookmyung.ac.kr/~itx1910896/xml/sample.html)
+[웹응용 #8 sample.html](http://mm.sookmyung.ac.kr/~itx1910896/xml/sample.html)
 
-[웹응용#8 detail.html](http://mm.sookmyung.ac.kr/~itx1910896/xml/detail.html)
+[웹응용 #8 detail.html](http://mm.sookmyung.ac.kr/~itx1910896/xml/detail.html)
